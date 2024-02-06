@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Category Filter</title>
+    <link rel = "stylesheet" href = "style.css">
+</head>
+<body>
+    <div class="header">
+        <div class="container">
+           <div class="navbar">
+               <div class="logo">
+                   <a href="index.html"><img src="images/nav-removebg-preview (1).png" width="100px"></a>
+               </div>
+               <nav>
+                <ul id="MenuItems">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="product.html">Products</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="account.html">Account</a></li>
+                </ul>
+               </nav>
+               <a href="cart.html"><img src="images/cart.png" width="30px" height="30px"></a>
+               <img src="images/menu.png" onclick="menutoggle()" class="menu-icon">
+           </div>
+    <div class = "wrapper">
+        <div class = "category-filter">
+            <div class = "container">
+                <div class = "title">
+                    <h1>Featured Products</h1>
+                </div>
+
+                <div class = "filter-btns">
+                    <button type = "button" class = "filter-btn" id = "all">all</button>
+                    <button type = "button" class = "filter-btn" id = "Balls">Balls</button>
+                    <button type = "button" class = "filter-btn" id = "Jersery">Jersery</button>
+                    <button type = "button" class = "filter-btn" id = "Equipments">Equipments</button>
+                    <button type = "button" class = "filter-btn" id = "shoes">shoes</button>
+                </div>
+
+                <div class = "filter-items">
+                    <div class = "filter-item all Balls">
+                        <div class = "item-img">
+                            <img src = "images/V200W_2.png" alt = "Item image">
+                        </div>
+                        <div class = "item-info">
+                            <p>Mikasa V200W</p>
+                            <div>
+                                <span class = "new-price">$80</span>
+                            </div>
+                            <a href = "#" class ="add-btn">Add to Cart</a>
+                        </div>
+                    </div>
+
+                    <div class = "filter-item all Balls">
+                        <div class = "item-img">
+                            <img src = "images/V300W_2__22302.webp" alt = "Item image">
+                        </div>
+                        <div class = "item-info">
+                            <p>Mikasa V300W</p>
+                            <div>
+                                <span class = "new-price">$60</span>
+                            </div>
+                            <a href = "#" class ="add-btn">Add to Cart</a>
+                        </div>
+                    </div>
+
+                    <div class = "filter-item all Balls">
+                        <div class = "item-img">
+                            <img src = "images/Molten-V5M-3500-Volleyball-removebg-preview.png" alt = "Item image">
+                        </div>
+                        <div class = "item-info">
+                            <p>Molten 3500</p>
+                            <div>
+                                <span class = "new-price">$40</span>
+                            </div>
+                            <a href = "#" class ="add-btn">Add to Cart</a>
+                        </div>
+                    </div>
+
+                    <div class = "filter-item all Balls">
+                        <div class = "item-img">
+                            <img src = "images/beach_volleyball-removebg-preview.png" alt = "Item image">
+                        </div>
+                        <div class = "item-info">
+                            <p>Mikasa Beach Classic</p>
+                            <div>
+                                <span class = "new-price">$29.99</span>
+                            </div>
+                            <a href = "#" class ="add-btn">Add to Cart</a>
+                        </div>
+                    </div>
+
+                    <div class = "filter-item all Jersery">
+                        <div class = "item-img">
+                            <img src = "images/china-removebg-preview (1).png" alt = "Item image">
+                        </div>
+                        <div class = "item-info">
+                            <p>Acsis China Jersery</p>
+                            <div>
+                                <span class = "new-price">$40</span>
+                            </div>
+                            <a href = "#" class ="add-btn">Add to Cart</a>
+                        </div>
+                    </div>
+
+                    <div class = "filter-item all Jersery">
+                        <div class = "item-img">
+                            <img src = "images/striped-removebg-preview.png" alt = "Item image">
+                        </div>
+                        <div class = "item-info">
+                            <p>VNL Striped Jersery</p>
+                            <div>
+                                <span class = "new-price">$40</span>
+                            </div>
+                            <a href = "#" class ="add-btn">Add to Cart</a>
+                        </div>
+                    </div>
+
+                    <div class = "filter-item all Jersery">
+                        <div class = "item-img">
+                            <img src = "images/Korea-removebg-preview.png" alt = "Item image">
+                        </div>
+                        <div class = "item-info">
+                            <p>Acsis Korea Jersery</p>
+                            <div>
+                                <span class = "new-price">$40</span>
+                            </div>
+                            <a href = "#" class ="add-btn">Add to Cart</a>
+                        </div>
+                    </div>
+
+                    <div class = "filter-item all Jersery">
+                        <div class = "item-img">
+                            <img src = "images/jpn-removebg-preview.png" alt = "Item image">
+                            
+                        </div>
+                        <div class = "item-info">
+                            <p>Acsis Japan Jersery</p>
+                            <div>
+                                <span class = "new-price">$40</span>
+                            </div>
+                            <a href = "#" class ="add-btn">Add to Cart</a>
+                        </div>
+                    </div>
+
+                    <div class = "filter-item Equipments">
+                        <div class = "item-img">
+                            <img src = "images/knee pad.webp" alt = "Item image">
+                        </div>
+                        <div class = "item-info">
+                            <p>McDavid Knee Pad</p>
+                            <div>
+                                <span class = "new-price">$69.99</span>
+                            </div>
+                            <a href = "#" class ="add-btn">Add to Cart</a>
+                        </div>
+                    </div>
+
+                    <div class = "filter-item all Equipments">
+                        <div class = "item-img">
+                            <img src = "images/calf.webp" alt = "Item image">
+                            <span class = "discount">20%</span>
+                        </div>
+                        <div class = "item-info">
+                            <p>McDavid Calf Sleeve</p>
+                            <div>
+                                <span class = "new-price">$69.99</span>
+                            </div>
+                            <a href = "#" class ="add-btn">Add to Cart</a>
+                        </div>
+                    </div>
+
+                    <div class = "filter-item all Equipments">
+                        <div class = "item-img">
+                            <img src = "images/ankel_guard-removebg-preview.png" alt = "Item image">
+                        </div>
+                        <div class = "item-info">
+                            <p>McDavid Ankel Guard</p>
+                            <div>
+                                <span class = "new-price">$59.99</span>
+                            </div>
+                            <a href = "#" class ="add-btn">Add to Cart</a>
+                        </div>
+                    </div>
+
+                    <div class = "filter-item all Equipments">
+                        <div class = "item-img">
+                            <img src = "images/tights-removebg-preview.png" alt = "Item image">
+                        </div>
+                        <div class = "item-info">
+                            <p>McDavid Tights</p>
+                            <div>
+                                <span class = "new-price">$79.99</span>
+                            </div>
+                            <a href = "#" class ="add-btn">Add to Cart</a>
+                        </div>
+                    </div>
+                    <div class = "filter-item all shoes">
+                        <div class = "item-img">
+                            <img src = "images/Sky_elite_germany-removebg-preview.png" alt = "Item image">
+                        </div>
+                        <div class = "item-info">
+                            <p>Acsis Sky Elite Gremany</p>
+                            <div>
+                                <span class = "new-price">$179.99</span>
+                            </div>
+                            <a href = "#" class ="add-btn">Add to Cart</a>
+                        </div>
+                    </div>
+                    <div class = "filter-item all shoes">
+                        <div class = "item-img">
+                            <img src = "images/sky_elite_green-removebg-preview.png" alt = "Item image">
+                        </div>
+                        <div class = "item-info">
+                            <p>Acsis Sky Elite Green</p>
+                            <div>
+                                <span class = "new-price">$179.99</span>
+                            </div>
+                            <a href = "#" class ="add-btn">Add to Cart</a>
+                        </div>
+                    </div>
+                    <div class = "filter-item all shoes">
+                        <div class = "item-img">
+                            <img src = "images/sky_elite-removebg-preview.png" alt = "Item image">
+                        </div>
+                        <div class = "item-info">
+                            <p>Acsis Sky Eltie Tokyo</p>
+                            <div>
+                                <span class = "new-price">$300</span>
+                            </div>
+                            <a href = "#" class ="add-btn">Add to Cart</a>
+                        </div>
+                    </div>
+                    <div class = "filter-item all shoes">
+                        <div class = "item-img">
+                            <img src = "images/sky_elite_fresh_blue-removebg-preview.png" alt = "Item image">
+                        </div>
+                        <div class = "item-info">
+                            <p>Acsis Sky Elite Fresh Blue </p>
+                            <div>
+                                <span class = "new-price">$200</span>
+                            </div>
+                            <a href = "#" class ="add-btn">Add to Cart</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src = "script.js"></script>
+</body>
+</html>
