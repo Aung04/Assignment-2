@@ -1,29 +1,4 @@
-.header{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 150px;
-    height: 6rem;
-    border-bottom: 1px solid #ccc;
-}
-.header p {
-    font-size: 30px;
-    font-weight: bold;
-    color: #18bdfe;
-}
-ul{
-    list-style: none;
-    display: flex;
-    justify-content: space-between;
-}
-li a{
-    text-decoration: none;
-    color: #333;
-    margin-left: 30px;
-}
-li a:hover{
-    color: #18bdfe;
-}
+
 .container{
     display: flex;
     margin: 3rem 150px;
