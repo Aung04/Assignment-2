@@ -15,7 +15,7 @@ function login(){
 }
 
 document.addEventListener("DOMContentLoaded", function () {
-    const APIKEY = "65c45ce9cca7363819653b97";
+    const APIKEY = "65c4c4d62844e137b8fb3cc0";
 
 // Login Button
 var loginBtn = document.getElementById('loginBtn');
@@ -23,8 +23,8 @@ if (loginBtn) {
     loginBtn.addEventListener('click', function (e) {
         e.preventDefault();
 
-        let username = document.getElementById("username").value;
-        let loginPW = document.getElementById("loginPW").value;
+        let Name = document.getElementById("Name").value;
+        let Password = document.getElementById("Password").value;
 
         let settings = {
             method: "GET",
@@ -35,13 +35,13 @@ if (loginBtn) {
             },
         };
 
-        fetch("https://fedasg2-90ed.restdb.io/rest/account", settings)
+        fetch("https://fedassgn2-f53d.restdb.io/rest/member", settings)
             .then(response => {
                 if (!response.ok) throw new Error('Network response was not ok');
                 return response.json();
             })
             .then(data => {
-                const matchingUser = data.find(user => user.username === username && user.password === loginPW);
+                const matchingUser = data.find(user => user.Name === Name && user.Password === Password);
                 if (matchingUser) {
                     window.location.href = "home.html";
                 } else {
@@ -58,25 +58,25 @@ if (loginBtn) {
 }
 
 // Signup Button
-var signUpBtn = document.getElementById('regBtn');
-if (signUpBtn) {
-    signUpBtn.addEventListener('click', function (e) {
-        e.preventDefault();
+var regBtn = document.getElementById('regBtn');
+if (regBtn) {
+    regBtn.addEventListener('click', function (e) {
+        e.preventDefault()
 
         // Retrieve form data
-        let regUser = document.getElementById("regUser").value;
-        let regEmail = document.getElementById("regEmail").value;
-        let regPW = document.getElementById("regPW").value;
+        let Name = document.getElementById("regName").value;
+        let Email = document.getElementById("regEmail").value;
+        let Password = document.getElementById("regPassword").value;
 
         // Prepare JSON data for the API call
-        let jsondata = {
-            "name": regUser,
-            "email": regEmail,
-            "password": regPW
+        var jsondata = {
+            "Name": Name,
+            "Email": Email,
+            "Password": Password
         };
 
         // Define settings for fetch call
-        let settings = {
+        var settings = {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",
@@ -85,9 +85,9 @@ if (signUpBtn) {
             },
             body: JSON.stringify(jsondata),
         };
-
+        
         // Make the API call to signup
-        fetch("https://fedasg2-90ed.restdb.io/rest/account", settings) // Ensure this is the correct endpoint
+        fetch("https://fedassgn2-f53d.restdb.io/rest/member", settings) // Ensure this is the correct endpoint
             .then(response => {
                 if (!response.ok) throw new Error('Network response was not ok');
                 return response.json();
@@ -105,3 +105,4 @@ if (signUpBtn) {
     console.log('Signup button not found');
 }
 });
+
