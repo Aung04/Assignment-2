@@ -45,3 +45,4 @@ function resetActiveBtn(){
         btn.classList.remove('active-btn');
     });
 }
+

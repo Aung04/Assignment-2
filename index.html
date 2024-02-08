@@ -4,150 +4,94 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Football One-Stop-Shop</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-Avb2QiuDEEvB4bZJYdft2mNjVShBftLdPG8FJ0V7irTLQ8Uo0qcPxh4Plq7G5tGm0rU+1SPhVotteLpBERwTkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Login</title>
     <link rel="stylesheet" href="style.css">
-    <title>Hiking Kings</title>
+    <title>Login</title>
 </head>
+<body> 
+    <div class="account-page">
+        <div class="container">
+            <div class="row">
+                <div class="col-2">
+                    <img src="images/nav-removebg-preview (1).png" width=80%>
+                </div>
+                <div class="col-2">
+                    <div class="form-container">
+                        <p>Welcome to Voileyall</p>
+                        <p>Please login/register to continue</p>
+                        <div class="form-btn">
+                            <span onclick="login()">Login</span>
+                            <span onclick="register()">Register</span>
+                            <hr id="indicator">
+                        </div>
 
-<body>
-       
-   <div class="header">
-    <div class="container">
-       <div class="navbar">
-           <div class="logo">
-               <a href="index.html"><img src="images/nav-removebg-preview (1).png" width="100px"></a>
-           </div>
-           <nav>
-            <ul id="MenuItems">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="product.html">Products</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="account.html">Account</a></li>
-            </ul>
-           </nav>
-           <a href="cart.html"><img src="images/cart.png" width="30px" height="30px"></a>
-           <img src="images/menu.png" onclick="menutoggle()" class="menu-icon">
-       </div>
-       <div class="row">
-         <div class="col-2">
+                        <form id="loginForm">
+                            <input type="text" id="username" placeholder="Username">
+                            <input type="password" placeholder="Password">
+                            <button type="submit" for="loginBtn" class="btn">Login</button>
+                            <a href="#">Forgot Password</a>
+                        </form>
 
-             <h1>Voileyall<br>Set the Standard Elevate Your Game</h1>
-             <p style="color: black;">Our gear are made by Champions, for Champions<br>Are you up for it?</p>
-             <a href="#" class="btn">Explore Now &#8594;</a>
-         </div>
-         <div class="col-2">
-             <img src="images/VNL-2022-Japan-vs.-Italy-Yuji-Nishida-0988-1-removebg-preview.png">
-         </div>
-        
-    </div>   
-            
-        </div>   
-        
-    </div>
-    </div>
-<!------------------ featured categories --------------->
-  <div class="categories">
-      <div class="small-container">
-        <div class="row">
-            <div class="col-3">
-                <img src="images/sddefault-removebg-preview.png">
-            </div> 
-            <div class="col-3">
-               <img src="images/unnamed-file-16692-removebg-preview.png">
-            </div> 
-            <div class="col-3">
-                <img src="images/sky_elite-removebg-preview.png">
-            </div> 
+                        <form id="regForm">
+                            <input type="text" placeholder="Username">
+                            <input type="email" placeholder="Email">
+                            <input type="password" placeholder="Password">
+                            <button type="submit" for="regBtn" class="btn">Register</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
-  </div>
-
-    <section class="product"> 
-        <h2 class="product-category">best seller</h2>
-        <button class="pre-btn"><img src="images/arrow.png" alt=""></button>
-        <button class="nxt-btn"><img src="images/arrow.png" alt=""></button>
-        <div class="product-container">
-            <div class="product-card">
-                <div class="product-image">
-                    <img src="images/vnl_japan-removebg-preview.png" class="product-thumb" alt="">
-                    <button class="card-btn">add to wishlist</button>
-                </div>
-                <div class="product-info">
-                    <h2 class="product-brand">ACSIS</h2>
-                    <p class="product-short-description">Japan Red Volleyball Jersey</p>
-                    <span class="price">$40</span>
-                </div>
-            </div>
-            <div class="product-card">
-                <div class="product-image">
-                    <img src="images/vnl_black-removebg-preview.png" class="product-thumb" alt="">
-                    <button class="card-btn">add to wishlist</button>
-                </div>
-                <div class="product-info">
-                    <h2 class="product-brand">ACSIS</h2>
-                    <p class="product-short-description">Japan Black Volleyball Jersey</p>
-                    <span class="price">$40</span>
-                </div>
-            </div>
-            <div class="product-card">
-                <div class="product-image">
-                    <img src="images/Trukey-removebg-preview.png" class="product-thumb" alt="">
-                    <button class="card-btn">add to wishlist</button>
-                </div>
-                <div class="product-info">
-                    <h2 class="product-brand">VNL</h2>
-                    <p class="product-short-description">Turkey Jersey</p>
-                    <span class="price">$40</span>
-                </div>
-            </div>
-            <div class="product-card">
-                <div class="product-image">
-                    <img src="images/striped-removebg-preview.png" class="product-thumb" alt="">
-                    <button class="card-btn">add to wishlist</button>
-                </div>
-                <div class="product-info">
-                    <h2 class="product-brand">VNL</h2>
-                    <p class="product-short-description">VNL Striped Jersey</p>
-                    <span class="price">$40</span>
-                </div>
-            </div>
-            <div class="product-card">
-                <div class="product-image">
-                    
-                    <img src="images/Korea-removebg-preview.png" class="product-thumb" alt="">
-                    <button class="card-btn">add to wishlist</button>
-                </div>
-                <div class="product-info">
-                    <h2 class="product-brand">ACSIS</h2>
-                    <p class="product-short-description">Korea Jersey</p>
-                    <span class="price">$40</span>
-                </div>
-            </div>
-            <div class="product-card">
-                <div class="product-image">
-                    <img src="images/china-removebg-preview (1).png" class="product-thumb" alt="">
-                    <button class="card-btn">add to wishlist</button>
-                </div>
-                <div class="product-info">
-                    <h2 class="product-brand">ADDIDAS</h2>
-                    <p class="product-short-description">China Jersey</p>
-                    <span class="price">$40</span>
-                </div>
-            </div>
-            <div class="product-card">
-                <div class="product-image">
-                    <img src="images/Brzail-removebg-preview.png" class="product-thumb" alt="">
-                    <button class="card-btn">add to wishlist</button>
-                </div>
-                <div class="product-info">
-                    <h2 class="product-brand">ACSIS</h2>
-                    <p class="product-short-description">Brazil Jersey</p>
-                    <span class="price">$40</span>
-                </div>
             
-        </div>
-    </section>
-    
-    <script src="script.js"></script>
+</div>
+    <script src = "account.js"></script>
 </body>
+<footer>
+    <div class="footer-content">
+        <div class="left-side">
+            <div class="footer-contact">
+                <h2>Contact Us</h2>
+                <p>
+                    Phone: (123) 456-7890<br>
+                    Email: info@example.com
+                </p   >
+            </div>
+            <div class="footer-links">
+                <h2>Quick Links</h2>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">Product</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="location">
+            <h2>Location</h2>
+            <p>
+                Paragon Shopping Centre #02-32<br>
+                290 Orchard Rd, Singapore 238859
+            </p>
+            <div class="map-container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.785098871997!2d103.83348157455966!3d1.303968661722462!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31da1992320efb97%3A0xcd0a05fe09ae092a!2sParagon%20Shopping%20Centre!5e0!3m2!1sen!2ssg!4v1701429072981!5m2!1sen!2ssg"
+                    width="100%" height="200" style="border:0;"
+                    allowfullscreen="" loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>                
+        </div>
+
+        <div class="social-media">
+            <h2>Social Media</h2>
+            <a href="https://www.facebook.com/huang.yihong.06/friends"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.threads.net/@yi._.hong06"><i class="fab fa-threads"></i></a>
+            <a href="https://www.instagram.com/yi._.hong06/"><i class="fab fa-instagram"></i></a>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <p>&copy; 2023 Voileyall Shop. All rights reserved. | Designed by Aung and Yi Hong</p>
+    </div>
+</footer>
 </html>
