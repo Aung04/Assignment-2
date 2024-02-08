@@ -90,7 +90,9 @@ form a{
 body{
   font-family: 'Poppins', sans-serif;
 }
-
+li{
+  color: #000;
+}
 a{
   text-decoration: none;
   color: black;
@@ -1442,3 +1444,5 @@ footer {
 .footer-bottom p {
   font-size: 0.8em;
 }
+
+/*Game*/
